@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Alert-->
+  <div class="alert">
+    <div class="box">
+      <p class="title">Special Alert</p>
+      <p id="details"></p>
+      <button id="cancel">x</button>
+      <button id="ok">ok</button>
+    </div>
+  </div>
+
+
+  <div class="game-container">
+    <div class="game-header">
+      <h1>Tic-Tac-Toe</h1>
+      <div class="scoreboard">
+        <div class="x">X-Score: <span id="x-score-display">0</span></div>
+        <div class="o">O-Score: <span id="o-score-display">0</span></div>
+      </div>
+    </div>
+    <div class="board">
+      <div data-cell="0"></div>
+      <div data-cell="1"></div>
+      <div data-cell="2"></div>
+      <div data-cell="3"></div>
+      <div data-cell="4"></div>
+      <div data-cell="5"></div>
+      <div data-cell="6"></div>
+      <div data-cell="7"></div>
+      <div data-cell="8"></div>
+    </div>
+    <button id="reset-button">Reset Game</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

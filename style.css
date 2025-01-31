@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*-Alerr*/
+.alert {
+  background-color: rgba(25, 25, 25, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  color: #000;
+  display: none;
+  transform: scaleX(1.1);
+}
+
+.box {
+  background-color: white;
+  padding: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  min-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(66, 68, 90, 0.5);
+}
+
+.box .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5rem;
+}
+
+#details {
+  padding: 10px;
+  text-align: center;
+}
+
+#ok {
+  min-width: 90px;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#cancel {
+  min-width: 50px;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+#cancel:hover {
+  background: rgba(255, 79, 79, 1);
+}
+
+
+.game-container {
+  background-color: #1c1f26;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.game-header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #18e5a3;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.scoreboard .x,
+.scoreboard .o {
+  font-size: 18px;
+}
+
+.turn {
+  background-color: rgb(0, 255, 174);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.board div {
+  background-color: #3a3f4b;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.board div:hover {
+  background-color: #18e5a3;
+  transform: scale(1.05);
+}
+
+#reset-button {
+  padding: 10px 20px;
+  background-color: #18e5a3;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+  background-color: #15c292;
+}
