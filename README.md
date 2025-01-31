@@ -17,7 +17,8 @@ A simple **Tic Tac Toe** game built using **HTML, CSS, and JavaScript**.
 
 ## 📸 Preview
 
-(Add a screenshot of the game here if possible)
+![Game Screenshot](images/screenshot.png)
+
 
 ## 📜 License
 
